@@ -1,5 +1,6 @@
 // Update with your config settings.
 
+require('dotenv').config();
 module.exports = {
 
   development: {
@@ -7,6 +8,9 @@ module.exports = {
     connection: 'postgres://localhost/moving_tool',
     migrations: {
       directory: './db/migrations'
+    },
+    seeds: {
+      directory: './db/seeds/dev'
     },
     useNullAsDefault: true
   },
